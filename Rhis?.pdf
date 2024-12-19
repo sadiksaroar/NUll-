@@ -1,0 +1,64 @@
+English Explanation:
+
+n Dart, the ? symbol after a data type means the variable is nullable, i.e., it can hold either a value or null.
+
+Here is what happens with the given code:
+
+String? name;         // `name` can be a String or null.
+
+int? numberOfLegs;    // `numberOfLegs` can be an int or null.
+
+int? lifeSpan;        // `lifeSpan` can be an int or null.
+
+Nullable variables: By adding ?, you explicitly indicate that the variable can remain uninitialized or null.
+Without the ?, variables must always hold a non-null value. If you try to leave them uninitialized, the compiler will give an error.
+
+Example:
+dart
+Copy code
+
+
+String? name;      // name is null by default
+name = "Tiger";    // Now name has a value
+
+int? numberOfLegs;
+print(numberOfLegs); // Outputs: null
+
+numberOfLegs = 4;  // Now numberOfLegs has a value of 4
+
+If you don’t use ?:
+
+dart
+Copy code
+
+String name;  // Error: Must be initialized
+
+Bangla Explanation:
+Dart-এ ? চিহ্ন ব্যবহার করলে বোঝায় যে ভেরিয়েবলটি nullable। অর্থাৎ, এটি হয় একটি মান রাখবে অথবা null হতে পারবে।
+
+String? name;         // `name` একটি String বা null হতে পারে।
+int? numberOfLegs;    // `numberOfLegs` একটি সংখ্যা বা null হতে পারে।
+int? lifeSpan;        // `lifeSpan` একটি সংখ্যা বা null হতে পারে।
+
+
+Nullable ভেরিয়েবল: ? চিহ্ন যোগ করে আপনি স্পষ্ট করেন যে ভেরিয়েবলটি শূন্য (uninitialized) বা null থাকতে পারে।
+যদি ? ব্যবহার না করেন, তাহলে ভেরিয়েবল অবশ্যই একটি value নিতে হবে। নাহলে কম্পাইলার ত্রুটি (error) দেবে।
+
+String? name;      // name ডিফল্টভাবে null।
+name = "Tiger";    // এখন name-এর মান "Tiger"।
+
+int? numberOfLegs;
+print(numberOfLegs); // আউটপুট: null
+
+numberOfLegs = 4;  // এখন numberOfLegs-এর মান 4।
+
+String name;  // Error: অবশ্যই কোনো মান দিয়ে initialize করতে হবে।
+
+? আপনাকে ভেরিয়েবলের মান null রাখতে দেয়। এটি বিশেষভাবে দরকার হয় যখন আপনি কোনো ভেরিয়েবলকে শুরুতে null রাখতে চান বা তা পরে initialize করবেন।
+
+
+
+
+
+
+
